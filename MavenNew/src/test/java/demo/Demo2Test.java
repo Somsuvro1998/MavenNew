@@ -7,13 +7,16 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DemoTest {
-	@Test
-	public void methodTest1()
-	{
-	
+public class Demo2Test {
+
+	 @Test
+		public void demoTest()
+		{
 			String BROWSER=System.getProperty("browser");
+			//String URL=System.getProperty("url");
 			System.out.println(BROWSER);
+			//System.out.println(URL);
+			
 			WebDriver driver;
 			if(BROWSER.equalsIgnoreCase("chrome"))
 			{
@@ -24,8 +27,12 @@ public class DemoTest {
 			{
 				driver=new FirefoxDriver();
 			}
-		driver.get("https://www.amazon.in/");
-		//System.out.println("Hello");
-	}
-
+			driver.get("https://www.google.co.in/");
+			//driver.findElement(By.xpath("//*[.='✕']")).click();
+			
+			//driver.quit();
+		}
+		
+	
+	
 }
