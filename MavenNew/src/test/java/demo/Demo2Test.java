@@ -14,21 +14,22 @@ public class Demo2Test {
 		public void demoTest()
 		{
 			String BROWSER=System.getProperty("browser");
-			//String URL=System.getProperty("url");
+			String URL=System.getProperty("url");
 			System.out.println(BROWSER);
-			//System.out.println(URL);
+			System.out.println(URL);
 			
-			WebDriver driver;
-			if(BROWSER.equalsIgnoreCase("chrome"))
-			{
-				WebDriverManager.chromedriver().setup();
-				driver=new ChromeDriver();
-			}
-			else
-			{
-				driver=new FirefoxDriver();
-			}
-			driver.get("https://www.google.co.in/");
+//			WebDriver driver;
+			
+//			if(BROWSER.equalsIgnoreCase("chrome"))
+//			{
+//				WebDriverManager.chromedriver().setup();
+//				driver=new ChromeDriver();
+//			}
+//			else
+//			{
+//				driver=new FirefoxDriver();
+//			}
+//			driver.get("https://www.google.co.in/");
 			//driver.findElement(By.xpath("//*[.='✕']")).click();
 			
 			//driver.quit();

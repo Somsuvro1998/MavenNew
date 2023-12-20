@@ -14,18 +14,20 @@ public class DemoTest {
 	{
 	
 			String BROWSER=System.getProperty("browser");
+			String URL=System.getProperty("url");
 			System.out.println(BROWSER);
-			WebDriver driver;
-			if(BROWSER.equalsIgnoreCase("chrome"))
-			{
-				WebDriverManager.chromedriver().setup();
-				driver=new ChromeDriver();
-			}
-			else
-			{
-				driver=new FirefoxDriver();
-			}
-		driver.get("https://www.amazon.in/");
+			System.out.println(URL);
+//			WebDriver driver;
+//			if(BROWSER.equalsIgnoreCase("chrome"))
+//			{
+//				WebDriverManager.chromedriver().setup();
+//				driver=new ChromeDriver();
+//			}
+//			else
+//			{
+//				driver=new FirefoxDriver();
+//			}
+//		driver.get("https://www.amazon.in/");
 		//System.out.println("Hello");
 	}
 
